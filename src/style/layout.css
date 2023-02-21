@@ -1,0 +1,26 @@
+@import '/reset.css';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+.inpulabel{
+    display:flex;
+    flex-direction: column;
+}
+input{
+    display:flex ;
+    width: auto;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #e9e6e6;
+    padding: 0px 16px;
+}
+input::placeholder{
+    color: #838383;
+}
+label{
+    font-size: 16px;
+}
