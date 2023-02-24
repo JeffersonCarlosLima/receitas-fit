@@ -1,8 +1,26 @@
 @import '/reset.css';
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  header{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+.logo{
+    display: flex;
+    width: 150px;
+    height: auto;
+}
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 16px;
     gap:16px;
@@ -10,6 +28,7 @@
 .inpulabel{
     display:flex;
     flex-direction: column;
+    gap: 16px;
 }
 input{
     display:flex ;
@@ -25,3 +44,16 @@ input::placeholder{
 label{
     font-size: 16px;
 }
+.btn-calcular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 40px;
+    border: none;
+    background: #089944;
+    color: white;
+    border-radius: 8px;
+
+}
+
