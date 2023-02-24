@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/style/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ 
 </head>
 <body>
+    <header>
+        <img class="logo" src="/src/img/Bo-cume-food-logo.svg" alt="Logo">
+    </header>
     <section class="container">
+        <p>Calculadora de Calorias</p>
         <div class="inpulabel">
             <input id="carbo" type="number" placeholder="Carboidratos">
             <input id="protein" type="number" placeholder="Proteinas">
             <input id="fats" type="number" placeholder="Gorduras">
         </div>
-        <button class="btn-calcular" onclick="calcular()">Calcular</button>
+        <button class="btn-calcular" onclick="calcular()"><span class="material-symbols-outlined">
+            done
+            </span>Calcular</button>
     </section>
     <div>
         <span>Resultado:</span>
-        <p></p>
+        <p id="resultado"></p>
     </div>
     <script src="src/script/script.js"></script>
 </body>
