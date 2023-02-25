@@ -8,8 +8,13 @@ function calcular(){
     let gordura = document.getElementById("fats").value;
     
     Resultado = ((gordura * 9)+(proteinas * 4)+(carboidratos * 4));
-    document.getElementById("resultado").innerHTML=Resultado;
-    console.log(Resultado);
+    
+    if (Resultado==0){
+        alert("Campos vazios digite algum valor para calcular as calirias")
+    }else{
+        document.getElementById("resultado").innerHTML=Resultado;
+        console.log(Resultado);
+    }
 }
 
 
