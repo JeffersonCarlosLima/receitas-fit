@@ -1,4 +1,6 @@
 @import '/reset.css';
+@import '/src/style/receitas.css';
+@import '/src/style/variaveis_.css';
 
 .material-symbols-outlined {
     text-decoration: none;
@@ -8,12 +10,15 @@
     'GRAD' 0,
     'opsz' 48
   }
+  body{
+    background-color: var(--linght);
+  }
   header{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
-    background: #007BFF;
+    background: var(--Primary);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
   .header-nav-bar{
@@ -24,7 +29,7 @@
     padding: 16px;
   }
   .logo-nav-bar{
-    width: 92px;
+    display: flex;
   }
   .nav-button{
     border: 0px;
@@ -32,8 +37,8 @@
     padding: 8px;
     margin: 8px;
     cursor: pointer;
-    color: white;
-    background-color: dodgerblue
+    color: var(--white);
+    background: var(--Primary);
   }
   .overlay{
     height: 100%;
@@ -45,23 +50,24 @@
     top: 0;
     overflow-x: hidden;
     transition: all 0.5s;
-    background: #FFFFFF;
+    background: var(--white);
     box-shadow: 8px 0px 8px rgba(0, 0, 0, 0.25);
   }
   .content-overlay{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    color:  white;
+    color:  var(--white);
     font-size: 16px;
     padding: 0px 16px;
   }
   .iten_menu{
     display: flex;
     text-decoration: none;
-    border-bottom: 1px solid #838383;
+    border-bottom: 1px solid var(--Primary);
     padding: 8px;
-    color: #838383;
+    color: #343A40;
+    ;
   }
   .closebtn{
    display: flex;

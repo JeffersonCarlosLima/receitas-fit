@@ -15,7 +15,7 @@ function calcular(){
     Resultado = ((gordura * 9)+(proteinas * 4)+(carboidratos * 4));
     
     if (Resultado==0){
-        alert("Campos vazios digite algum valor para calcular as calirias")
+        alert("Campos vazios digite algum valor para calcular as calorias dos alimentos.")
     }else{
         document.getElementById("resultado").innerHTML=Resultado;
         console.log(Resultado);

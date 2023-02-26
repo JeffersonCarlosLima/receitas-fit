@@ -35,29 +35,20 @@
     <section class="logo_container">
         <img class="logo" src="./src/img/Bo-cume-food-logo.svg" alt="Logo" title="Logo">
     </section>
-    <section class="title-receitas">
-        <p class="">Pizzas Fit</p>
-    </section>
-    <section class="group-cards">
-        <div class="card-receitas">
-            <img class="img-card-receitas" src="/src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
-            <p>Pizza Fit</p>
-            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
-        </div> 
-        <div class="card-receitas">
-            <img class="img-card-receitas" src="/src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
-            <p>Pizza Fit</p>
-            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
-        </div> 
-        <div class="card-receitas">
-            <img class="img-card-receitas" src="/src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
-            <p>Pizza Fit</p>
-            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
+    <section class="container">
+        <p>Calculadora de Calorias</p>
+        <div class="inpulabel">
+            <input id="carbo" type="number" placeholder="Carboidratos">
+            <input id="protein" type="number" placeholder="Proteinas">
+            <input id="fats" type="number" placeholder="Gorduras">
         </div>
-        <div class="card-receitas">
-            <img class="img-card-receitas" src="/src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
-            <p>Pizza Fit</p>
-            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
+        <button class="btn-calcular" onclick="calcular()"><span class="material-symbols-outlined">
+            done
+            </span>Calcular</button>
+
+        <div class="resultado-calc">
+            <span class="titulo-resultado">Resultado</span>
+            <p class="valor-resultado" id="resultado"></p>
         </div>
     </section>
     <script src="src/script/script.js"></script>
