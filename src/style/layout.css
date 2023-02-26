@@ -1,6 +1,6 @@
 @import 'reset.css';
-@import './receitas.css';
-@import './variaveis_.css';
+@import 'receitas.css';
+@import 'variaveis_.css';
 
 .material-symbols-outlined {
     text-decoration: none;
