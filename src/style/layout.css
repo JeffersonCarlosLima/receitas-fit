@@ -1,6 +1,7 @@
 @import '/reset.css';
 
 .material-symbols-outlined {
+    text-decoration: none;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -31,7 +32,6 @@
     padding: 8px;
     margin: 8px;
     cursor: pointer;
-    display: block;
     color: white;
     background-color: dodgerblue
   }
@@ -54,9 +54,14 @@
     gap: 16px;
     color:  white;
     font-size: 16px;
+    padding: 0px 16px;
+  }
+  .iten_menu{
+    display: flex;
     text-decoration: none;
-    padding: 16px 0px;
-
+    border-bottom: 1px solid #838383;
+    padding: 8px;
+    color: #838383;
   }
   .closebtn{
    display: flex;
