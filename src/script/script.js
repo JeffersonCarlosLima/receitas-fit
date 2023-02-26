@@ -1,6 +1,11 @@
 
-
-
+function openav(){
+    document.getElementById('nav-bar').style.width='70%';
+}
+function closenav(){
+    document.getElementById('nav-bar').style.width='0%';
+    
+}
 function calcular(){
 
     let carboidratos = document.getElementById("carbo").value;
