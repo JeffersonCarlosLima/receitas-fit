@@ -1,0 +1,51 @@
+#p-receita{
+    display:flex ;
+    width: 350px;
+    height: 40px;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #e9e6e6;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+.search-input{
+    display: flex;
+    flex-direction: row;
+}
+.bt-search{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid #e9e6e6;
+    color: var(--Primary);
+    cursor: pointer;
+}
+.container_categ{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.categ-receitas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    gap: 10px;
+    cursor: pointer;
+
+    width: 111px;
+    height: 32px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Sombra1 */
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+}

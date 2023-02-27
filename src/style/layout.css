@@ -1,6 +1,7 @@
 @import 'reset.css';
 @import 'receitas.css';
 @import 'variaveis_.css';
+@import 'index.css';
 
 .material-symbols-outlined {
     text-decoration: none;
@@ -88,6 +89,7 @@
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     justify-content: center;
@@ -100,15 +102,15 @@
     flex-direction: column;
     gap: 16px;
 }
-input{
+.input-calc{
     display:flex ;
-    width: auto;
-    height: 32px;
+    width: 350px;
+    height: 40px;
     border-radius: 8px;
     border: 1px solid #e9e6e6;
     padding: 0px 16px;
 }
-input::placeholder{
+.input-calc::placeholder{
     color: #838383;
 }
 label{
@@ -118,7 +120,7 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
+    width: 128px;
     height: 40px;
     border: none;
     background: #089944;
@@ -135,7 +137,7 @@ label{
     align-items: center;
     justify-content:flex-start;
     padding: 16px;
-    width: auto;
+    width: 350px;
     height: 80px;
     border: 1px solid #c5c4c4;
     border-radius: 8px;
