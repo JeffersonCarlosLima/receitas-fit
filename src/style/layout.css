@@ -13,6 +13,10 @@
   }
   body{
     background-color: var(--linght);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
   }
   header{
     display: flex;
