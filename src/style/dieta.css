@@ -1,0 +1,18 @@
+.dias-dieta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.dia-semana{
+    display: flex;
+    width: auto;
+    height: 32px;
+    align-items: center;
+    border: 1px solid var(--Primary);
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--Primary);
+}
