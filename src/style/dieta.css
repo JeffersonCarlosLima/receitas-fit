@@ -1,26 +1,33 @@
 .dias-dieta{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-direction:row;
+    gap: 16px;
+    padding: 8px 16px;
+    width: 100%;
+    overflow-x: scroll;
 }
-
+.title-cardapio{
+    font-size: 32px;
+    color: var(--dark);
+    margin-bottom: 24px;
+}
 .dia-semana{
     display: flex;
-    width: auto;
+    width: 78px;
     height: 32px;
     align-items: center;
+    justify-content: center;
     border: 1px solid var(--Primary);
     border-radius: 8px;
     font-size: 16px;
-    color: var(--Primary);
+    color: var(--white);
+    background-color: var(--Primary);
 }
 .cardapio{
     display: flex;
     flex-direction: column;
+    width: 95%;
     gap: 8px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 16px;
     color: var(--Secundary);
 }
