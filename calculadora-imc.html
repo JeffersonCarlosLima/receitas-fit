@@ -36,18 +36,18 @@
         <img class="logo" src="./src/img/Bo-cume-food-menu.svg" alt="Logo" title="Logo">
     </section>
     <section class="container">
-        <p>Calculadora de Calorias</p>
+        <p>Calculadora de IMC</p>
         <div class="inpulabel">
-            <input class="input-calc" id="altura" type="number" placeholder="Altura em (cm)">
-            <input class="input-calc" id="peso" type="number" placeholder="Peso em (Kg)">
+            <input class="input-calc" id="altura" type="number" placeholder="Altura em (cm) - Ex:. 1.72cm">
+            <input class="input-calc" id="peso" type="number" placeholder="Peso em (Kg) - Ex:. 70kg">
         </div>
         <button class="btn-calcular" onclick="calcularImc()"><span class="material-symbols-outlined">done</span>Calcular</button>
     
         <div class="resultado-calc">
             <span class="titulo-resultado">Resultado</span>
             <p class="valor-resultado" id="resultado-imc"></p>
-            <p class="orientacao-imc" id="resultado-imc"></p>
         </div>
+        <p class="valor-resultado" id="orientacao-imc"></p>
     </section>
     <script src="src/script/script.js"></script>
 

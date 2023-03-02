@@ -1,10 +1,20 @@
+.container-carroussel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+}
 .dias-dieta{
     display: flex;
     flex-direction:row;
-    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    gap: 8px;
     padding: 8px 16px;
-    width: 100%;
-    overflow-x: scroll;
 }
 .title-cardapio{
     font-size: 32px;
@@ -13,8 +23,8 @@
 }
 .dia-semana{
     display: flex;
-    width: 78px;
-    height: 32px;
+    width: 128px;
+    height: 40px;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--Primary);
@@ -26,7 +36,7 @@
 .cardapio{
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: auto;
     gap: 8px;
     font-size: 16px;
     color: var(--Secundary);
@@ -35,10 +45,24 @@ a{
     text-decoration: none;
 
 }
+.cardapio p{
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+    line-height: 16px;
+}
+.cardapio h3{
+    display: flex;
+    width: auto;
+    align-items:flex-start;
+    justify-content: flex-start;
+    
+}
 .dias-semana-dieta{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
     font-size: 24px;
     color: var(--info);
     border: 1px solid var(--info);
