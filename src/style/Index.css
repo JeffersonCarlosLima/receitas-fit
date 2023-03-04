@@ -30,19 +30,19 @@
     width: auto;
     height:auto;
     padding: 8px 16px;
-    gap: 16px;
+    gap: 8px;
 }
 .categ-receitas{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: auto;
     border: 1px solid var(--Primary);
     border-radius: 8px;
     font-size: 16px;
     color: var(--white);
     background-color: var(--Primary);
-    padding: 8px 8px;
+    padding: 8px 16px;
 }
 .categ-rec-p{
     display: flex;

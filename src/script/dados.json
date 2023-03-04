@@ -1,0 +1,14 @@
+{
+  "produto1": {
+    "nome": "Camiseta",
+    "cor": "azul",
+    "tamanho": "P",
+    "preco": 29.99
+  },
+  "produto2": {
+    "nome": "Calça Jeans",
+    "cor": "preta",
+    "tamanho": "M",
+    "preco": 79.99
+  }
+}

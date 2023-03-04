@@ -1,0 +1,38 @@
+{
+    "receitas": [
+      {
+        "titulo": "Bolo de cenoura",
+        "ingredientes": [
+          "3 cenouras médias raladas",
+          "3 ovos",
+          "1 xícara (chá) de óleo",
+          "2 xícaras (chá) de açúcar",
+          "2 xícaras (chá) de farinha de trigo",
+          "1 colher (sopa) de fermento em pó"
+        ],
+        "modo_preparo": [
+          "Bata no liquidificador as cenouras, os ovos e o óleo até ficar homogêneo.",
+          "Transfira para uma tigela e misture o açúcar, a farinha de trigo e o fermento em pó.",
+          "Despeje em uma forma untada e enfarinhada e leve ao forno preaquecido a 180ºC por cerca de 40 minutos.",
+          "Espere esfriar antes de servir."
+        ]
+      },
+      {
+        "titulo": "Brigadeiro",
+        "ingredientes": [
+          "1 lata de leite condensado",
+          "1 colher (sopa) de manteiga",
+          "4 colheres (sopa) de chocolate em pó",
+          "granulado para decorar"
+        ],
+        "modo_preparo": [
+          "Em uma panela, misture o leite condensado, a manteiga e o chocolate em pó.",
+          "Leve ao fogo baixo, mexendo sempre, até desgrudar do fundo da panela.",
+          "Retire do fogo e deixe esfriar.",
+          "Modele as bolinhas com as mãos untadas com manteiga e passe pelo granulado.",
+          "Coloque em forminhas de papel e sirva."
+        ]
+      }
+    ]
+  }
+  
