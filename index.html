@@ -8,27 +8,29 @@
     <link rel="stylesheet" href="src/style/layout.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <div id="nav-bar" class="overlay">
-    <div class="header-nav-bar">
-        <img class="logo-nav-bar" src="./src/img/Bo-cume-food-menu.svg" alt="Logo" title="Logo">
-        <a href="javascript:void(0)" class="closebtn material-symbols-outlined" onclick="closenav()"><span>close</span></a>
-    </div>
-    <div class="content-overlay">
+        <div class="header-nav-bar">
+            <img class="logo-nav-bar" src="./src/img/Bo-cume-food-menu.svg" alt="Logo" title="Logo">
+            <a href="javascript:void(0)" class="closebtn material-symbols-outlined" onclick="closenav()"><span>close</span></a>
+        </div>
+        <div class="content-overlay">
         <a class="iten_menu" href="index.html">Inicio</a>
         <a class="iten_menu" href="receitas.html">Receitas</a>
         <a class="iten_menu" href="./src/pages/dietas/dieta1.html">Dietas</a>
         <a class="iten_menu" href="calculador-de-calorias.html">Calculadora de calorias</a>
         <a class="iten_menu" href="calculadora-imc.html">Calulo IMC</a>
     </div>
-</div>
+    <div id="nav-receitas" class="overlay">
+        <div id="receitas"></div>
+    </div>
     <header>
         <button onclick="openav()" class="nav-button material-symbols-outlined"><span title="menu">menu</span></button>
     </header>
@@ -38,7 +40,7 @@
     <section class="container">
         <label for="p-receita">Pesquise sua receita</label>
         <div class="search-input">
-                <input id="p-receita" type="search" title="Digite aqui sua pesquisa" name="p" placeholder="Ex:. Pizza Fit, Macarronada">
+                <input class="search-input" type="text" id="search-input" placeholder="Digite aqui para pesquisar..." onkeyup="search()">
                 <button class="material-symbols-outlined bt-search" title="Pesquisar">search</button>
         </div>
     </section>
@@ -53,8 +55,10 @@
         <div class="categ-receitas"><p class="categ-rec-p">Sopas e caldos</p></div>
         <div class="categ-receitas"><p class="categ-rec-p">Massas</p></div>
     </section>
-    <section class="title-receitas">
-        <p class="">Pizzas Fit</p>
+    <section class="container" id="pesquisa">
+
+        <section class="title-receitas">
+            <p class="">Pizzas Fit</p>
     </section>
     <section class="group-cards">
         <div class="card-receitas">
@@ -69,7 +73,7 @@
         </div> 
         <div class="card-receitas">
             <img class="img-card-receitas" src="./src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
-            <p class="title-card">Pizza Fit</p>
+            <p class="title-card">Bolo de chocolate</p>
             <p class="text-card">reaqsadasgagasgda agdasgadgasag agdas</p>
         </div> 
         <div class="card-receitas">
@@ -77,31 +81,6 @@
             <p class="title-card">Pizza Fit</p>
             <p class="text-card">reaqsadasgagasgda agdasgadgasag agdas</p>
         </div> 
-    </section>
-    <section class="title-receitas">
-        <p class="">Tortas</p>
-    </section>
-    <section class="group-cards">
-        <div class="card-receitas">
-            <img class="img-card-receitas" src="./src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
-            <p>Pizza Fit</p>
-            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
-        </div> 
-        <div class="card-receitas">
-            <img class="img-card-receitas" src="./src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
-            <p>Pizza Fit</p>
-            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
-        </div> 
-        <div class="card-receitas">
-            <img class="img-card-receitas" src="./src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
-            <p>Pizza Fit</p>
-            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
-        </div>
-        <div class="card-receitas">
-            <img class="img-card-receitas" src="./src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
-            <p>Pizza Fit</p>
-            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
-        </div>
     </section>
     <section class="title-receitas">
         <p class="">Tortas</p>
@@ -128,6 +107,39 @@
             <p>reaqsadasgagasgda agdasgadgasag agdas</p>
         </div>
     </section>
+    <section class="title-receitas">
+        <p class="">Tortas</p>
+    </section>
+    <section class="group-cards">
+        <div class="card-receitas">
+            <img class="img-card-receitas" src="./src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
+            <p>Pizza Fit</p>
+            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
+        </div> 
+        <div class="card-receitas">
+            <img class="img-card-receitas" src="./src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
+            <p>Pizza Fit</p>
+            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
+        </div> 
+        <div class="card-receitas">
+            <img class="img-card-receitas" src="./src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
+            <p>Pizza Fit</p>
+            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
+        </div>
+        <div class="card-receitas">
+            <img class="img-card-receitas" src="./src/img/receitas/pizza-fit-de-frigideira.webp" alt="">
+            <p>Pizza Fit</p>
+            <p>reaqsadasgagasgda agdasgadgasag agdas</p>
+        </div>
+    </section>
+</section>
+    <p id="mensagem"></p>
+    
     <script src="src/script/script.js"></script>
+    <script src="/recita.js"></script>
+    <script src="src/script/pesquisa.js"></script>
+    <!-- Importação do jQuery e do Bootstrap JS -->
+	
+    
 </body>
 </html>
