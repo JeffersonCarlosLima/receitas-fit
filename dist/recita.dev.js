@@ -17,7 +17,12 @@ fetch('receitas.json').then(function (response) {
     var titulo = document.createElement('h2');
     titulo.className = 'card-title';
     titulo.textContent = receita.titulo;
-    corpo.appendChild(titulo); // Adiciona os ingredientes
+    corpo.appendChild(titulo); //========================================================
+    //Criar card da lista de receitas
+
+    var listacard = document.createElement('div');
+    listacard.className = "card-receitas"; //============================================================
+    // Adiciona os ingredientes
 
     var ingredientes = document.createElement('ul');
     ingredientes.className = 'list-group list-group-flush';
@@ -45,3 +50,11 @@ fetch('receitas.json').then(function (response) {
 })["catch"](function (error) {
   return console.error(error);
 });
+
+function openreceita() {
+  document.getElementById('nav-receita').style.width = '70%';
+}
+
+function closereceita() {
+  document.getElementById('nav-receita').style.width = '0%';
+}

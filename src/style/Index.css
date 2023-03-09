@@ -1,26 +1,21 @@
-#p-receita{
+.search-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+.p-receita{
     display:flex ;
     width: 100%;
     height: 40px;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px;
     border: 1px solid #e9e6e6;
     padding: 0px 16px;
     cursor: pointer;
 }
-.search-input{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.bt-search{
-    display: flex;
-    width: auto;
-    height: 40px;
-    border-radius: 0px 8px 8px 0px;
-    border: 1px solid #e9e6e6;
-    color: var(--Primary);
-    cursor: pointer;
-}
+
 .container_categ{
     display: flex;
     flex-direction: row;
@@ -48,4 +43,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.overlay-receita{
+    height: 100%;
+    width: 0%;
+    /*propriedade para informar que este objeto vai ficar sobre as outras cosias da pagina*/
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    background: var(--white);
+    box-shadow: 8px 0px 8px rgba(0, 0, 0, 0.25);
 }

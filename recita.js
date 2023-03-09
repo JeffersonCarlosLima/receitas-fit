@@ -8,17 +8,23 @@ fetch('receitas.json')
         // Cria um card para a receita
         const card = document.createElement('div');
         card.className = 'cardreceita';
-
+        
         // Cria o corpo do card
         const corpo = document.createElement('div');
         corpo.className = 'card-body';
-
+        
         // Adiciona o título da receita
         const titulo = document.createElement('h2');
         titulo.className = 'card-title';
         titulo.textContent = receita.titulo;
         corpo.appendChild(titulo);
+        //========================================================
+        //Criar card da lista de receitas
+        const listacard = document.createElement('div');
+        listacard.className = "card-receitas"
+        
 
+        //============================================================
         // Adiciona os ingredientes
         const ingredientes = document.createElement('ul');
         ingredientes.className = 'list-group list-group-flush';
@@ -47,3 +53,14 @@ fetch('receitas.json')
     });
 })
 .catch(error => console.error(error));
+
+
+function openreceita(){
+    document.getElementById('nav-receita').style.width='70%';
+}
+function closereceita(){
+    document.getElementById('nav-receita').style.width='0%';
+    
+}
+
+
