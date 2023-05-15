@@ -1,4 +1,4 @@
-# Site de receitas fitness
+# Receitas fitness - mobile
 Este é um projeto em andamento mas que já possui algumas funcionalidades ativas como:
 - Calculo de IMC;
 - Lista de recetias com Search instantâneo;
