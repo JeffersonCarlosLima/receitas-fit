@@ -3,4 +3,4 @@ Este é um projeto em andamento mas que já possui algumas funcionalidades ativa
 - Calculo de IMC;
 - Lista de recetias com Search instantâneo;
 - 
-- Link para demonstaração: https://jeffersoncarloslima.github.io/Calculadora-de-calorias/
+- Link para demonstaração: [https://jeffersoncarloslima.github.io/Calculadora-de-calorias/](https://jeffersoncarloslima.github.io/receitas-fit/)
