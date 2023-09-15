@@ -26,7 +26,9 @@ function calcularImc() {
     let altura = document.getElementById("altura").value;
     let peso = document.getElementById("peso").value;
     IMC = (peso / (altura*altura));
+    IMC.toFixed(2);
     document.getElementById("resultado-imc").innerHTML=IMC;
+
 
     if (IMC <= 18.5){
         document.getElementById("orientacao-imc").innerHTML = "Resultado menor que 18,5 - Abaixo do peso";
